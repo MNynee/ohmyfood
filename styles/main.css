@@ -9,6 +9,21 @@ body {
   background-color: #F6F6F6;
 }
 
+.button {
+  border-radius: 25px;
+  background: linear-gradient(#E370DA, #9356DC);
+  color: #FFFFFF;
+  font-weight: 500;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+  font-size: 1rem;
+  transition: all 0.3s ease;
+}
+.button:hover, .button:focus {
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.35);
+  filter: brightness(1.05);
+  transform: translateX(-1px);
+}
+
 .header__logo {
   background-color: #FFFFFF;
   width: 100%;
@@ -35,4 +50,29 @@ body {
 }
 .header__location i {
   margin-right: 10px;
+}
+
+.banner {
+  padding: 39px 0 57px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 16px;
+}
+.banner .banner__title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #000000;
+  width: 73%;
+}
+.banner .banner__subtitle {
+  width: 84%;
+  font-size: 1.125rem;
+  font-weight: 300;
+}
+.banner .banner__button {
+  text-decoration: none;
+  padding: 15px 20px;
+  margin-top: 11px;
 }/*# sourceMappingURL=main.css.map */

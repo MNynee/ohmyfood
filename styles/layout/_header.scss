@@ -1,0 +1,33 @@
+@use '../base/variables';
+
+.header__logo {
+    background-color: variables.$bg-secondary;
+    width: 100%;
+    text-align: center;
+    padding: 14px 0 8px 0;
+    filter: drop-shadow(variables.$shadow-header);
+    position: relative;
+    z-index: 1000;
+    
+    .header__img {
+        width: 162px;
+    }
+}
+
+
+.header__location {
+    width: 100%;
+    background-color: variables.$bg-location;
+    padding: 1rem 0;
+    text-align: center;
+    filter: drop-shadow(variables.$shadow-location);
+
+    .header__text {
+        font-weight: 500;
+        color: variables.$text-color-secondary;
+    }
+
+    i {
+        margin-right: 10px;
+    }
+}

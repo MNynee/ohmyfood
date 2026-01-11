@@ -8,8 +8,15 @@ $new-place-title: #008766;
 $hover-dishes: #99E2D0;
 
 $bg-button: linear-gradient(#9356DC, #FF79DA);
-$hover-button: lighten(linear-gradient(#9356DC, #FF79DA), 50%);
 $bg-liked-button: linear-gradient(#FF79DA, #9356DC);
+
+$text-color-main: #000000;
+$text-color-secondary: #353535;
 
 $font-title: 'Shrikhand', serif;
 $font-text: 'Roboto', sans-serif;
+
+$shadow-header: 0 2px 4px rgba(0, 0, 0, 0.25);
+$shadow-location: 0 4px 4px rgba(0, 0, 0, 0.25);
+$shadow-button: 0 4px 10px rgba(0, 0, 0, 0.25);
+$shadow-button-hover: 0 4px 15px rgba(0, 0, 0, 0.35);

@@ -2,4 +2,37 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: #F6F6F6;
+}
+
+.header__logo {
+  background-color: #FFFFFF;
+  width: 100%;
+  text-align: center;
+  padding: 14px 0 8px 0;
+  filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.25));
+  position: relative;
+  z-index: 1000;
+}
+.header__logo .header__img {
+  width: 162px;
+}
+
+.header__location {
+  width: 100%;
+  background-color: #EAEAEA;
+  padding: 1rem 0;
+  text-align: center;
+  filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 0.25));
+}
+.header__location .header__text {
+  font-weight: 500;
+  color: #353535;
+}
+.header__location i {
+  margin-right: 10px;
 }/*# sourceMappingURL=main.css.map */

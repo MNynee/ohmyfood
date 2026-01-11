@@ -1,18 +1,18 @@
 @use "../base/variables";
 
 .button {
-    border: none;
   border-radius: 25px;
   background: variables.$bg-button;
   color: variables.$text-color-button;
   font-weight: 500;
-  filter: drop-shadow(variables.$shadow-button);
+  box-shadow: variables.$shadow-button;
   font-size: 1rem;
-  transition: all .3s ease-out;
+  transition: all 0.3s ease;
 
   &:hover,
   &:focus {
-    filter: drop-shadow(variables.$shadow-button-hover);
-
+    box-shadow: variables.$shadow-button-hover;
+    filter: brightness(1.05);
+    transform: translateX(-1px);
   }
 }

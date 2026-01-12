@@ -51,6 +51,9 @@ body {
 .tutorial__badge i {
   margin: 0 24px 0 35px;
 }
+.tutorial__badge .badge__text {
+  font-weight: 500;
+}
 
 .header__logo {
   background-color: #FFFFFF;

@@ -27,3 +27,17 @@
         margin-top: 11px;
     }
 }
+
+.tutorial {
+    background-color: variables.$bg-secondary;
+    padding: 48px 20px 48px 32px;
+
+    .tutorial__steps {
+        list-style-type: none;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 25px 24px;
+        margin: 20px 0;
+    }
+}

@@ -24,6 +24,66 @@ body {
   transform: translateX(-1px);
 }
 
+.restaurants__cards {
+  display: grid;
+  gap: 18px;
+}
+.restaurants__cards a {
+  max-width: 100%;
+  text-decoration: none;
+}
+.restaurants__cards .card {
+  background-color: #FFFFFF;
+  width: 100%;
+  max-height: 251px;
+  border-radius: 15px;
+  position: relative;
+}
+.restaurants__cards .card .card__img {
+  display: block;
+  width: 100%;
+  max-height: 168px;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 15px 15px 0 0;
+}
+.restaurants__cards .card .card__tag {
+  display: inline-block;
+  padding: 6px 10px;
+  background-color: #99E2D0;
+  color: #008766;
+  font-size: 0.875rem;
+  font-weight: 500;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 2px;
+  position: absolute;
+  right: 15px;
+  top: 15px;
+}
+.restaurants__cards .card .card__content {
+  display: flex;
+  justify-content: space-between;
+  padding: 16px 24px 16px 16px;
+  color: #353535;
+}
+.restaurants__cards .card .favorite__button {
+  display: none;
+}
+.restaurants__cards .card label {
+  display: flex;
+}
+.restaurants__cards .card .card__favorite {
+  align-self: center;
+  width: 32px;
+  height: 32px;
+  background-image: url("../../assets/logo/heart-regular-full.svg");
+  transition: background-image 0.2s ease;
+}
+.restaurants__cards .card .favorite__button:checked + label > .card__favorite {
+  background-image: url("../../assets/logo/heart-solid-full.svg");
+}
+
 .tutorial__badge {
   display: flex;
   align-items: center;
@@ -83,6 +143,11 @@ body {
   margin-right: 10px;
 }
 
+.section__title {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
 .banner {
   padding: 39px 0 57px 0;
   display: flex;
@@ -119,4 +184,11 @@ body {
   flex-wrap: wrap;
   gap: 25px 24px;
   margin: 20px 0;
+}
+
+.restaurants {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 54px 20px;
 }/*# sourceMappingURL=main.css.map */

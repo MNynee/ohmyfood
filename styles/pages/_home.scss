@@ -1,5 +1,14 @@
 @use '../base/variables';
 
+// General
+
+.section__title {
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+// Banner
+
 .banner {
     padding: 39px 0 57px 0;
     display: flex;
@@ -28,6 +37,8 @@
     }
 }
 
+// Tutorial Section
+
 .tutorial {
     background-color: variables.$bg-secondary;
     padding: 48px 20px 48px 32px;
@@ -40,4 +51,13 @@
         gap: 25px 24px;
         margin: 20px 0;
     }
+}
+
+// Restaurants
+
+.restaurants {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 54px 20px;
 }

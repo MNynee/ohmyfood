@@ -1,0 +1,70 @@
+@use "../base/variables";
+
+.restaurants__cards {
+  display: grid;
+  gap: 18px;
+
+  a {
+    max-width: 100%;
+    text-decoration: none;
+  }
+
+  .card {
+    background-color: variables.$bg-secondary;
+    width: 100%;
+    max-height: 251px;
+    border-radius: 15px;
+    position: relative;
+    
+    .card__img {
+      display: block;
+      width: 100%;
+      max-height: 168px;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 15px 15px 0 0;
+    }
+
+    .card__tag {
+        display: inline-block;
+        padding: 6px 10px;
+        background-color: variables.$hover-dishes;
+        color: variables.$new-place-title;
+        font-size: .875rem;
+        font-weight: 500;
+        box-shadow: variables.$shadow-tag;
+        border-radius: 2px;
+        position: absolute;
+        right: 15px;
+        top: 15px;
+    }
+
+    .card__content {
+        display: flex;
+        justify-content: space-between;
+        padding: 16px 24px 16px 16px;
+        color: variables.$text-color-secondary;
+    }
+
+    .favorite__button {
+        display: none;
+    }
+
+    label {
+        display: flex;
+    }
+
+    .card__favorite {
+        align-self: center;
+        width: 32px;
+        height: 32px;
+        background-image: url('../../assets/logo/heart-regular-full.svg');
+        transition: background-image .2s ease;
+    }
+
+    .favorite__button:checked + label > .card__favorite {
+        background-image: url('../../assets/logo/heart-solid-full.svg');
+    }
+  }
+
+}

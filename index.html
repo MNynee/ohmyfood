@@ -37,46 +37,111 @@
     </header>
 
     <main>
-        <section class="banner">
-            <h1 class="banner__title">
-                Réservez le menu qui vous convient
-            </h1>
-            <p class="banner__subtitle">
-                Découvrez des restaurants d'exception, sélectionnés par nos soins.
-            </p>
-            <a href="#restaurants" class="banner__button button">
-                Explorer nos restaurants
-            </a>
-        </section>
+      <section class="banner">
+        <h1 class="banner__title">Réservez le menu qui vous convient</h1>
+        <p class="banner__subtitle">
+          Découvrez des restaurants d'exception, sélectionnés par nos soins.
+        </p>
+        <a href="#restaurants" class="banner__button button">
+          Explorer nos restaurants
+        </a>
+      </section>
 
-        <section class="tutorial">
-          <h2 class="tutorial__title title">
-            Fonctionnement
-          </h2>
-          <ul class="tutorial__steps">
-            <li class="tutorial__badge">
-              <span class="badge__number">1</span>
-              <i class="fa-solid fa-mobile-screen-button" style="color: #7e7e7e;"></i>
-              <p class="badge__text">
-                Choisissez un restaurant
-              </p>
-            </li>
-            <li class="tutorial__badge">
-              <span class="badge__number">2</span>
-              <i class="fa-solid fa-list" style="color: #7e7e7e;"></i>
-              <p class="badge__text">
-                Composez votre menu
-              </p>
-            </li>
-            <li class="tutorial__badge">
-              <span class="badge__number">3</span>
-              <i class="fa-solid fa-store" style="color: #9356dc;"></i>
-              <p class="badge__text">
-                Dégustez au restaurant
-              </p>
-            </li>
-          </ul>
-        </section>
+      <section class="tutorial">
+        <div class="tutorial__title">
+          <h2 class="section__title">Fonctionnement</h2>
+        </div>
+        <ul class="tutorial__steps">
+          <li class="tutorial__badge">
+            <span class="badge__number">1</span>
+            <i
+              class="fa-solid fa-mobile-screen-button"
+              style="color: #7e7e7e"
+            ></i>
+            <p class="badge__text">Choisissez un restaurant</p>
+          </li>
+          <li class="tutorial__badge">
+            <span class="badge__number">2</span>
+            <i class="fa-solid fa-list" style="color: #7e7e7e"></i>
+            <p class="badge__text">Composez votre menu</p>
+          </li>
+          <li class="tutorial__badge">
+            <span class="badge__number">3</span>
+            <i class="fa-solid fa-store" style="color: #9356dc"></i>
+            <p class="badge__text">Dégustez au restaurant</p>
+          </li>
+        </ul>
+      </section>
+
+      <section class="restaurants" id="restaurants">
+        <div class="restaurants__title">
+          <h2 class="restaurants__title">Restaurants</h2>
+        </div>
+        <div class="restaurants__cards">
+          <a href="cartes/la-palette-du-gout.html">
+            <article class="card">
+              <img src="assets/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="Assiette gastronomique servie dans un restaurant chic avec verres de vin et panier de pain sur la table" class="card__img">
+              <span class="card__tag">Nouveau</span>
+              <div class="card__content">
+                <div class="card__text">
+                  <h3 class="card__title">La palette du goût</h3>
+                  <p class="card__subtitle">Ménilmontant</p>
+                </div>
+                <input type="checkbox" name="favorite" id="favorite" class="favorite__button">
+                <label for="favorite">
+                  <div class="card__favorite"></div>
+                </label>
+              </div>
+            </article>
+          </a>
+          <a href="cartes/la-note-enchantee.html">
+            <article class="card">
+              <img src="assets/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg" alt="Table de restaurant vue du dessus avec assiette de tapas, salade de tomates mozzarella, panier de pain et verres de boisson" class="card__img">
+              <span class="card__tag">Nouveau</span>
+              <div class="card__content">
+                <div class="card__text">
+                  <h3 class="card__title">La note enchantée</h3>
+                  <p class="card__subtitle">Charonne</p>
+                </div>
+                <input type="checkbox" name="favorite" id="favorite-2" class="favorite__button">
+                <label for="favorite-2">
+                  <div class="card__favorite"></div>
+                </label>
+              </div>
+            </article>
+          </a>
+          <a href="cartes/a-la-francaise.html">
+            <article class="card">
+              <img src="assets/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="Œufs pochés nappés de sauce hollandaise sur toast avec épinards, servis sur une assiette blanche." class="card__img">
+              <div class="card__content">
+                <div class="card__text">
+                  <h3 class="card__title">La palette du goût</h3>
+                  <p class="card__subtitle">Cité Rouge</p>
+                </div>
+                <input type="checkbox" name="favorite" id="favorite-3" class="favorite__button">
+                <label for="favorite-3">
+                  <div class="card__favorite"></div>
+                </label>
+              </div>
+            </article>
+          </a>
+          <a href="cartes/le-delice-de-sens.html">
+            <article class="card">
+              <img src="assets/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg" alt="Plat long en céramique contenant un poisson nappé de sauce et garni de légumes dans un restaurant chaleureux" class="card__img">
+              <div class="card__content">
+                <div class="card__text">
+                  <h3 class="card__title">Le délice des sens</h3>
+                  <p class="card__subtitle">Folie-Méricourt</p>
+                </div>
+                <input type="checkbox" name="favorite" id="favorite-4" class="favorite__button">
+                <label for="favorite-4">
+                  <div class="card__favorite"></div>
+                </label>
+              </div>
+            </article>
+          </a>
+        </div>
+      </section>
     </main>
   </body>
 </html>

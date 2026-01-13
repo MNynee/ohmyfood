@@ -115,6 +115,34 @@ body {
   font-weight: 500;
 }
 
+footer {
+  background-color: #353535;
+}
+footer .footer__container {
+  padding: 22px 25px;
+  color: #FFFFFF;
+}
+footer .footer__title {
+  font-family: "Shrikhand", serif;
+  font-size: 1.125rem;
+  font-weight: 400;
+  margin-bottom: 1rem;
+}
+footer .footer__list {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+footer .footer__item:nth-child(1),
+footer .footer__item:nth-child(2) {
+  font-weight: 500;
+}
+footer .footer__item:nth-child(1) i,
+footer .footer__item:nth-child(2) i {
+  margin-right: 8px;
+}
+
 .header__logo {
   background-color: #FFFFFF;
   width: 100%;

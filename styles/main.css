@@ -64,6 +64,7 @@ body {
 }
 .card label {
   display: flex;
+  cursor: pointer;
 }
 .card .card__favorite {
   align-self: center;
@@ -110,9 +111,23 @@ body {
 footer {
   background-color: #353535;
 }
+@media (min-width: 769px) {
+  footer {
+    height: 114px;
+    align-content: end;
+  }
+}
 footer .footer__container {
   padding: 22px 25px;
   color: #FFFFFF;
+}
+@media (min-width: 769px) {
+  footer .footer__container {
+    padding: 30px 25px;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: end;
+  }
 }
 footer .footer__title {
   font-family: "Shrikhand", serif;
@@ -120,11 +135,27 @@ footer .footer__title {
   font-weight: 400;
   margin-bottom: 1rem;
 }
+@media (min-width: 769px) {
+  footer .footer__title {
+    margin-bottom: 0;
+    margin-left: 40px;
+  }
+}
 footer .footer__list {
   list-style-type: none;
   display: flex;
   flex-direction: column;
   gap: 7px;
+}
+footer .footer__list a {
+  text-decoration: none;
+  color: #FFFFFF;
+}
+@media (min-width: 769px) {
+  footer .footer__list {
+    flex-direction: row;
+    gap: 12px;
+  }
 }
 footer .footer__item:nth-child(1),
 footer .footer__item:nth-child(2) {
@@ -133,6 +164,10 @@ footer .footer__item:nth-child(2) {
 footer .footer__item:nth-child(1) i,
 footer .footer__item:nth-child(2) i {
   margin-right: 8px;
+}
+footer .footer__item:nth-child(2),
+footer .footer__item:nth-child(4) {
+  margin-right: 40px;
 }
 
 .header__logo {

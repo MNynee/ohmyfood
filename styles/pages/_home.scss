@@ -1,63 +1,110 @@
-@use '../base/variables';
+@use "../base/variables";
 
 // General
 
 .section__title {
-    font-size: 1.5rem;
-    font-weight: 700;
+  font-size: 1.5rem;
+  font-weight: 700;
 }
 
 // Banner
 
 .banner {
-    padding: 39px 0 57px 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    gap: 16px;
+  padding: 39px 0 57px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 16px;
 
-    .banner__title {
-        font-size: 1.5rem;
-        font-weight: 700;
-        color: variables.$text-color-main;
-        width: 73%;
-    }
+  .banner__title {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: variables.$text-color-main;
+    width: 73%;
 
-    .banner__subtitle {
-        width: 84%;
-        font-size: 1.125rem;
-        font-weight: 300;
+    @media (min-width: 769px) {
+      font-size: 2.5rem;
     }
+  }
 
-    .banner__button {
-        text-decoration: none;
-        padding: 15px 20px;
-        margin-top: 11px;
-    }
+  .banner__subtitle {
+    width: 84%;
+    font-size: 1.125rem;
+    font-weight: 300;
+  }
+
+  .banner__button {
+    text-decoration: none;
+    padding: 15px 20px;
+    margin-top: 11px;
+  }
+
+  @media (min-width: 769px) {
+    padding: 30px 0;
+  }
 }
 
 // Tutorial Section
 
 .tutorial {
-    background-color: variables.$bg-secondary;
-    padding: 48px 20px 48px 32px;
+  background-color: variables.$bg-secondary;
+  padding: 48px 20px 48px 32px;
 
-    .tutorial__steps {
-        list-style-type: none;
-        display: flex;
-        justify-content: center;
-        flex-wrap: wrap;
-        gap: 25px 24px;
-        margin: 20px 0;
+  .tutorial__steps {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 25px 24px;
+    margin: 20px 0;
+
+    @media (min-width: 1024px) {
+      gap: 30px;
     }
+  }
+
+  @media (min-width: 389px) {
+    padding: 48px 20px;
+  }
+
+  @media (min-width: 1024px) {
+    padding: 50px 120px;
+  }
+
+  @media (min-width: 1440px) {
+    padding: 50px 180px;
+  }
 }
 
 // Restaurants
 
 .restaurants {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    padding: 54px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 54px 20px;
+
+  .restaurants__cards {
+    display: grid;
+    gap: 18px;
+
+    a {
+      max-width: 100%;
+      text-decoration: none;
+    }
+
+    @media (min-width: 1024px) {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 50px 100px;
+    }
+  }
+
+  @media (min-width: 1024px) {
+    padding: 30px 120px;
+  }
+
+  @media (min-width: 1440px) {
+    padding: 30px 180px;
+  }
 }

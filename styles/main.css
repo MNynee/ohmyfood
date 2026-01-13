@@ -24,22 +24,14 @@ body {
   transform: translateX(-1px);
 }
 
-.restaurants__cards {
-  display: grid;
-  gap: 18px;
-}
-.restaurants__cards a {
-  max-width: 100%;
-  text-decoration: none;
-}
-.restaurants__cards .card {
+.card {
   background-color: #FFFFFF;
   width: 100%;
   max-height: 251px;
   border-radius: 15px;
   position: relative;
 }
-.restaurants__cards .card .card__img {
+.card .card__img {
   display: block;
   width: 100%;
   max-height: 168px;
@@ -48,7 +40,7 @@ body {
      object-fit: cover;
   border-radius: 15px 15px 0 0;
 }
-.restaurants__cards .card .card__tag {
+.card .card__tag {
   display: inline-block;
   padding: 6px 10px;
   background-color: #99E2D0;
@@ -61,26 +53,26 @@ body {
   right: 15px;
   top: 15px;
 }
-.restaurants__cards .card .card__content {
+.card .card__content {
   display: flex;
   justify-content: space-between;
   padding: 16px 24px 16px 16px;
   color: #353535;
 }
-.restaurants__cards .card .favorite__button {
+.card .favorite__button {
   display: none;
 }
-.restaurants__cards .card label {
+.card label {
   display: flex;
 }
-.restaurants__cards .card .card__favorite {
+.card .card__favorite {
   align-self: center;
   width: 32px;
   height: 32px;
   background-image: url("../../assets/logo/heart-regular-full.svg");
   transition: background-image 0.2s ease;
 }
-.restaurants__cards .card .favorite__button:checked + label > .card__favorite {
+.card .favorite__button:checked + label > .card__favorite {
   background-image: url("../../assets/logo/heart-solid-full.svg");
 }
 
@@ -200,6 +192,11 @@ footer .footer__item:nth-child(2) i {
   color: #000000;
   width: 73%;
 }
+@media (min-width: 769px) {
+  .banner .banner__title {
+    font-size: 2.5rem;
+  }
+}
 .banner .banner__subtitle {
   width: 84%;
   font-size: 1.125rem;
@@ -209,6 +206,11 @@ footer .footer__item:nth-child(2) i {
   text-decoration: none;
   padding: 15px 20px;
   margin-top: 11px;
+}
+@media (min-width: 769px) {
+  .banner {
+    padding: 30px 0;
+  }
 }
 
 .tutorial {
@@ -223,10 +225,54 @@ footer .footer__item:nth-child(2) i {
   gap: 25px 24px;
   margin: 20px 0;
 }
+@media (min-width: 1024px) {
+  .tutorial .tutorial__steps {
+    gap: 30px;
+  }
+}
+@media (min-width: 389px) {
+  .tutorial {
+    padding: 48px 20px;
+  }
+}
+@media (min-width: 1024px) {
+  .tutorial {
+    padding: 50px 120px;
+  }
+}
+@media (min-width: 1440px) {
+  .tutorial {
+    padding: 50px 180px;
+  }
+}
 
 .restaurants {
   display: flex;
   flex-direction: column;
   gap: 20px;
   padding: 54px 20px;
+}
+.restaurants .restaurants__cards {
+  display: grid;
+  gap: 18px;
+}
+.restaurants .restaurants__cards a {
+  max-width: 100%;
+  text-decoration: none;
+}
+@media (min-width: 1024px) {
+  .restaurants .restaurants__cards {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 50px 100px;
+  }
+}
+@media (min-width: 1024px) {
+  .restaurants {
+    padding: 30px 120px;
+  }
+}
+@media (min-width: 1440px) {
+  .restaurants {
+    padding: 30px 180px;
+  }
 }/*# sourceMappingURL=main.css.map */

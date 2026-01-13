@@ -3,9 +3,21 @@
 footer {
     background-color: variables.$bg-footer;
 
+    @media (min-width:769px) {
+        height: 114px;
+        align-content: end;
+    }
+
     .footer__container {
         padding: 22px 25px;
         color: variables.$text-color-button;
+
+        @media (min-width:769px) {
+            padding: 30px 25px;
+            display: flex;
+            flex-direction: row-reverse;
+            align-items: end;
+        }
     }
 
     .footer__title {
@@ -13,6 +25,11 @@ footer {
         font-size: 1.125rem;
         font-weight: 400;
         margin-bottom: 1rem;
+
+        @media (min-width:769px) {
+            margin-bottom: 0;
+            margin-left: 40px;
+        }
     }
 
     .footer__list {
@@ -20,6 +37,16 @@ footer {
         display: flex;
         flex-direction: column;
         gap: 7px;
+
+        a {
+            text-decoration: none;
+            color: variables.$text-color-button;
+        }
+
+        @media (min-width:769px) {
+            flex-direction: row;
+            gap: 12px;
+        }
     }
 
     .footer__item:nth-child(1),
@@ -29,5 +56,10 @@ footer {
         i {
             margin-right: 8px;
         }
+    }
+
+    .footer__item:nth-child(2),
+    .footer__item:nth-child(4) {
+        margin-right: 40px;
     }
 }

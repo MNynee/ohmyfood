@@ -1,13 +1,6 @@
 @use "../base/variables";
 
-.restaurants__cards {
-  display: grid;
-  gap: 18px;
 
-  a {
-    max-width: 100%;
-    text-decoration: none;
-  }
 
   .card {
     background-color: variables.$bg-secondary;
@@ -52,6 +45,7 @@
 
     label {
         display: flex;
+        cursor: pointer;
     }
 
     .card__favorite {
@@ -67,4 +61,4 @@
     }
   }
 
-}
+

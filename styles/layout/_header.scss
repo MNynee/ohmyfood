@@ -5,12 +5,16 @@
     width: 100%;
     text-align: center;
     padding: 14px 0 8px 0;
-    filter: drop-shadow(variables.$shadow-header);
+    box-shadow: variables.$shadow-header;
     position: relative;
     z-index: 1000;
     
     .header__img {
         width: 162px;
+    }
+
+    @media (min-width:769px) {
+        box-shadow: none;
     }
 }
 
@@ -20,7 +24,7 @@
     background-color: variables.$bg-location;
     padding: 1rem 0;
     text-align: center;
-    filter: drop-shadow(variables.$shadow-location);
+    box-shadow: variables.$shadow-location;
 
     .header__text {
         font-weight: 500;
@@ -29,5 +33,9 @@
 
     i {
         margin-right: 10px;
+    }
+
+    @media (min-width:769px) {
+        box-shadow: none;
     }
 }

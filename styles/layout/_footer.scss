@@ -1,0 +1,33 @@
+@use '../base/variables';
+
+footer {
+    background-color: variables.$bg-footer;
+
+    .footer__container {
+        padding: 22px 25px;
+        color: variables.$text-color-button;
+    }
+
+    .footer__title {
+        font-family: variables.$font-title;
+        font-size: 1.125rem;
+        font-weight: 400;
+        margin-bottom: 1rem;
+    }
+
+    .footer__list {
+        list-style-type: none;
+        display: flex;
+        flex-direction: column;
+        gap: 7px;
+    }
+
+    .footer__item:nth-child(1),
+    .footer__item:nth-child(2) {
+        font-weight: 500;
+
+        i {
+            margin-right: 8px;
+        }
+    }
+}

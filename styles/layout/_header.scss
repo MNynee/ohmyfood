@@ -1,7 +1,26 @@
 @use '../base/variables';
 
-.header__logo {
+.header__container {
     background-color: variables.$bg-secondary;
+    position: relative;
+
+    .header__arrow {
+        width: 30px;
+        height: 30px;
+        align-content: center;
+        justify-items: center;
+        position: absolute;
+        top: 12px;
+        left: 16px;
+        z-index: 1001;
+    }
+
+    img {
+        display: inline-block;
+    }
+}
+
+.header__logo {
     width: 100%;
     text-align: center;
     padding: 14px 0 8px 0;
@@ -11,6 +30,7 @@
     
     .header__img {
         width: 162px;
+        display: inline-block;
     }
 
     @media (min-width:769px) {

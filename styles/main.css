@@ -170,8 +170,25 @@ footer .footer__item:nth-child(4) {
   margin-right: 40px;
 }
 
-.header__logo {
+.header__container {
   background-color: #FFFFFF;
+  position: relative;
+}
+.header__container .header__arrow {
+  width: 30px;
+  height: 30px;
+  align-content: center;
+  justify-items: center;
+  position: absolute;
+  top: 12px;
+  left: 16px;
+  z-index: 1001;
+}
+.header__container img {
+  display: inline-block;
+}
+
+.header__logo {
   width: 100%;
   text-align: center;
   padding: 14px 0 8px 0;
@@ -181,6 +198,7 @@ footer .footer__item:nth-child(4) {
 }
 .header__logo .header__img {
   width: 162px;
+  display: inline-block;
 }
 @media (min-width: 769px) {
   .header__logo {

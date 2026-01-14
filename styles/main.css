@@ -328,4 +328,31 @@ footer .footer__item:nth-child(4) {
   .restaurants {
     padding: 30px 180px;
   }
+}
+
+.hero {
+  width: 100%;
+  height: 275px;
+  background-image: url("../../assets/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.carte .carte__header .favorite__button {
+  display: none;
+}
+.carte .carte__header label {
+  display: flex;
+  cursor: pointer;
+}
+.carte .carte__header .carte__favorite {
+  align-self: center;
+  width: 32px;
+  height: 32px;
+  background-image: url("../../assets/logo/heart-regular-full.svg");
+  transition: background-image 0.2s ease;
+}
+.carte .carte__header .favorite__button:checked + label > .carte__favorite {
+  background-image: url("../../assets/logo/heart-solid-full.svg");
 }/*# sourceMappingURL=main.css.map */

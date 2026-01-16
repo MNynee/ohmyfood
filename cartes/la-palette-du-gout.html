@@ -1,12 +1,229 @@
 <!DOCTYPE html>
 <html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ohmyfood</title>
-    <link rel="stylesheet" href="styles/main.css">
-</head>
-<body>
-    
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ohmyfood - La palette du goût</title>
+    <link rel="stylesheet" href="../styles/main.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100..900&family=Shrikhand&display=swap"
+      rel="stylesheet"
+    />
+
+    <script
+      src="https://kit.fontawesome.com/d125a17154.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <header>
+      <div class="header__container">
+        <div class="header__arrow">
+          <a href="../index.html">
+            <img
+              src="../assets/logo/Arrow.svg"
+              alt="Aller à la page d'accueil"
+            />
+          </a>
+        </div>
+        <div class="header__logo">
+          <img
+            src="../assets/logo/ohmyfood.png"
+            alt="Logo ohmyfood"
+            class="header__img"
+            loading="lazy"
+          />
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero">
+        <img
+          src="../assets/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg"
+          alt="Assiette gastronomique servie dans un restaurant chic avec verres de vin et panier de pain sur la table"
+          class="hero__bg"
+          loading="lazy"
+        />
+      </section>
+
+      <section class="carte">
+        <div class="carte__header">
+          <h1 class="carte__title">La palette du goût</h1>
+          <input
+            type="checkbox"
+            name="favorite"
+            id="favorite"
+            class="favorite__button"
+          />
+          <label for="favorite">
+            <div class="carte__favorite"></div>
+          </label>
+        </div>
+        <div class="carte__options">
+          <h2 class="carte__subtitle">ENTRÉES</h2>
+          <ul class="carte__list">
+            <li class="dish">
+              <div class="dish__content">
+                <div class="dish__text">
+                  <h3 class="dish__title">Fricassée d'escargots</h3>
+                  <p class="dish__sidedish">Au piment d'Espelette</p>
+                </div>
+                <div class="dish__info">
+                  <span class="dish__price">25€</span>
+                </div>
+              </div>
+              <div class="dish__confirm"></div>
+            </li>
+            <li class="dish">
+              <div class="dish__content">
+                <div class="dish__text">
+                  <h3 class="dish__title">Foie gras de canard mi-cuit</h3>
+                  <p class="dish__sidedish">Et ses copeaux de truffe noire</p>
+                </div>
+                <div class="dish__info">
+                  <span class="dish__price">35€</span>
+                </div>
+              </div>
+              <div class="dish__confirm"></div>
+            </li>
+            <li class="dish">
+              <div class="dish__content">
+                <div class="dish__text">
+                  <h3 class="dish__title">Œuf au plat</h3>
+                  <p class="dish__sidedish">
+                    Assaisoné à la truffe sur lit de caviar
+                  </p>
+                </div>
+                <div class="dish__info">
+                  <span class="dish__price">20€</span>
+                </div>
+              </div>
+              <div class="dish__confirm"></div>
+            </li>
+          </ul>
+        </div>
+        <div class="carte__options">
+          <h2 class="carte__subtitle">PLATS</h2>
+          <ul class="carte__list">
+            <li class="dish">
+              <div class="dish__content">
+                <div class="dish__text">
+                  <h3 class="dish__title">Filet de bœuf aux herbes</h3>
+                  <p class="dish__sidedish">
+                    Accompagné de sa ribambelle de légumes
+                  </p>
+                </div>
+                <div class="dish__info">
+                  <span class="dish__price">40€</span>
+                </div>
+              </div>
+              <div class="dish__confirm"></div>
+            </li>
+            <li class="dish">
+              <div class="dish__content">
+                <div class="dish__text">
+                  <h3 class="dish__title">Parmentier de queue de bœuf</h3>
+                  <p class="dish__sidedish">
+                    À la truffe noire sur sa purée de panais
+                  </p>
+                </div>
+                <div class="dish__info">
+                  <span class="dish__price">35€</span>
+                </div>
+              </div>
+              <div class="dish__confirm"></div>
+            </li>
+            <li class="dish">
+              <div class="dish__content">
+                <div class="dish__text">
+                  <h3 class="dish__title">Filet de turbot</h3>
+                  <p class="dish__sidedish">Aux agrumes</p>
+                </div>
+                <div class="dish__info">
+                  <span class="dish__price">44€</span>
+                </div>
+              </div>
+              <div class="dish__confirm"></div>
+            </li>
+          </ul>
+        </div>
+        <div class="carte__options">
+          <h2 class="carte__subtitle">DESSERTS</h2>
+          <ul class="carte__list">
+            <li class="dish">
+              <div class="dish__content">
+                <div class="dish__text">
+                  <h3 class="dish__title">Paris-Brest</h3>
+                  <p class="dish__sidedish">Revisité</p>
+                </div>
+                <div class="dish__info">
+                  <span class="dish__price">18€</span>
+                </div>
+              </div>
+              <div class="dish__confirm"></div>
+            </li>
+            <li class="dish">
+              <div class="dish__content">
+                <div class="dish__text">
+                  <h3 class="dish__title">Macaron au chocolat d'exception</h3>
+                  <p class="dish__sidedish">
+                    Et glace à la vanille de Madagascar
+                  </p>
+                </div>
+                <div class="dish__info">
+                  <span class="dish__price">22€</span>
+                </div>
+              </div>
+              <div class="dish__confirm"></div>
+            </li>
+            <li class="dish">
+              <div class="dish__content">
+                <div class="dish__text">
+                  <h3 class="dish__title">Mousse au chocolat</h3>
+                  <p class="dish__sidedish">
+                    Au piment d'Espelette et à la truffe noire
+                  </p>
+                </div>
+                <div class="dish__info">
+                  <span class="dish__price">23€</span>
+                </div>
+              </div>
+              <div class="dish__confirm"></div>
+            </li>
+          </ul>
+        </div>
+
+        <button class="carte__button button">Commander</button>
+      </section>
+    </main>
+
+    <footer>
+      <div class="footer__container">
+        <h4 class="footer__title">ohmyfood</h4>
+        <ul class="footer__list">
+          <a href="#" class="footer__item">
+            <li>
+              <i class="fa-solid fa-utensils" style="color: #ffffff"></i>
+              Proposer un restaurant
+            </li>
+          </a>
+          <a href="#" class="footer__item">
+            <li>
+              <i class="fa-solid fa-handshake-angle" style="color: #ffffff"></i>
+              Devenir partenaire
+            </li>
+          </a>
+          <a href="#" class="footer__item">
+            <li>Mentions legales</li>
+          </a>
+          <a href="#" class="footer__item">
+            <li>Contact</li>
+          </a>
+        </ul>
+      </div>
+    </footer>
+  </body>
 </html>

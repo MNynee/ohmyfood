@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ohmyfood</title>
-    <link rel="stylesheet" href="styles/main.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ohmyfood - Le delice de sens</title>
+    <link rel="stylesheet" href="../styles/main.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -16,8 +16,8 @@
       src="https://kit.fontawesome.com/d125a17154.js"
       crossorigin="anonymous"
     ></script>
-</head>
-<body>
+  </head>
+  <body>
     <header>
       <div class="header__container">
         <div class="header__arrow">
@@ -39,11 +39,17 @@
     </header>
 
     <main>
-      <section class="hero"></section>
+      <section class="hero">
+        <img
+          src="../assets/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg"
+          alt="Plat long en céramique contenant un poisson nappé de sauce et garni de légumes dans un restaurant chaleureux"
+          class="hero__bg"
+        />
+      </section>
 
       <section class="carte">
         <div class="carte__header">
-          <h1 class="carte__title">La palette du goût</h1>
+          <h1 class="carte__title">Le delice de sens</h1>
           <input
             type="checkbox"
             name="favorite"
@@ -54,62 +60,138 @@
             <div class="carte__favorite"></div>
           </label>
         </div>
+
         <div class="carte__options">
-          <h2 class="carte__title"></h2>
+          <h2 class="carte__subtitle">ENTRÉES</h2>
           <ul class="carte__list">
-            <li class="carte__item">
-              <h3 class="carte__dish"></h3>
-              <div class="carte__sidedish-price">
-                <p class="carte__sidedish"></p>
-                <span class="carte__price"></span>
+            <li class="dish">
+              <div class="dish__content">
+                <div class="dish__text">
+                  <h3 class="dish__title">Tartare de thon</h3>
+                  <p class="dish__sidedish">Assaisonné au yuzu</p>
+                </div>
+                <div class="dish__info">
+                  <span class="dish__price">25€</span>
+                </div>
               </div>
+              <div class="dish__confirm"></div>
             </li>
-            <li class="carte__item">
-              <h3 class="carte__dish"></h3>
-              <div class="carte__sidedish-price">
-                <p class="carte__sidedish"></p>
-                <span class="carte__price"></span>
+            <li class="dish">
+              <div class="dish__content">
+                <div class="dish__text">
+                  <h3 class="dish__title">Bouchée de homard croustillant</h3>
+                  <p class="dish__sidedish">
+                    Et sa farandole de petits légumes
+                  </p>
+                </div>
+                <div class="dish__info">
+                  <span class="dish__price">35€</span>
+                </div>
               </div>
+              <div class="dish__confirm"></div>
             </li>
-            <li class="carte__item">
-              <h3 class="carte__dish"></h3>
-              <div class="carte__sidedish-price">
-                <p class="carte__sidedish"></p>
-                <span class="carte__price"></span>
+            <li class="dish">
+              <div class="dish__content">
+                <div class="dish__text">
+                  <h3 class="dish__title">
+                    Poulet rôti aux herbes de Provence
+                  </h3>
+                  <p class="dish__sidedish">Et sa crème de truffe</p>
+                </div>
+                <div class="dish__info">
+                  <span class="dish__price">40€</span>
+                </div>
               </div>
+              <div class="dish__confirm"></div>
             </li>
           </ul>
         </div>
         <div class="carte__options">
-          <h2 class="carte__title"></h2>
+          <h2 class="carte__subtitle">PLATS</h2>
           <ul class="carte__list">
-            <li class="carte__item">
-              <h3 class="carte__dish"></h3>
-              <div class="carte__sidedish-price">
-                <p class="carte__sidedish"></p>
-                <span class="carte__price"></span>
+            <li class="dish">
+              <div class="dish__content">
+                <div class="dish__text">
+                  <h3 class="dish__title">
+                    Poulet rôti aux herbes de Provence
+                  </h3>
+                  <p class="dish__sidedish">Et sa crème de truffe</p>
+                </div>
+                <div class="dish__info">
+                  <span class="dish__price">40€</span>
+                </div>
               </div>
+              <div class="dish__confirm"></div>
             </li>
-            <li class="carte__item"></li>
-            <li class="carte__item"></li>
+            <li class="dish">
+              <div class="dish__content">
+                <div class="dish__text">
+                  <h3 class="dish__title">Langouste rôtie</h3>
+                  <p class="dish__sidedish">Et ses légumes de saison</p>
+                </div>
+                <div class="dish__info">
+                  <span class="dish__price">35€</span>
+                </div>
+              </div>
+              <div class="dish__confirm"></div>
+            </li>
+            <li class="dish">
+              <div class="dish__content">
+                <div class="dish__text">
+                  <h3 class="dish__title">Côte de bœuf Angus</h3>
+                  <p class="dish__sidedish">Et sa purée de panais</p>
+                </div>
+                <div class="dish__info">
+                  <span class="dish__price">44€</span>
+                </div>
+              </div>
+              <div class="dish__confirm"></div>
+            </li>
           </ul>
         </div>
         <div class="carte__options">
-          <h2 class="carte__title"></h2>
+          <h2 class="carte__subtitle">DESSERTS</h2>
           <ul class="carte__list">
-            <li class="carte__item">
-              <h3 class="carte__dish"></h3>
-              <div class="carte__sidedish-price">
-                <p class="carte__sidedish"></p>
-                <span class="carte__price"></span>
+            <li class="dish">
+              <div class="dish__content">
+                <div class="dish__text">
+                  <h3 class="dish__title">Farandole de desserts</h3>
+                  <p class="dish__sidedish">Du chef</p>
+                </div>
+                <div class="dish__info">
+                  <span class="dish__price">18€</span>
+                </div>
               </div>
+              <div class="dish__confirm"></div>
             </li>
-            <li class="carte__item"></li>
-            <li class="carte__item"></li>
+            <li class="dish">
+              <div class="dish__content">
+                <div class="dish__text">
+                  <h3 class="dish__title">Crème brulée</h3>
+                  <p class="dish__sidedish">Revisitée</p>
+                </div>
+                <div class="dish__info">
+                  <span class="dish__price">22€</span>
+                </div>
+              </div>
+              <div class="dish__confirm"></div>
+            </li>
+            <li class="dish">
+              <div class="dish__content">
+                <div class="dish__text">
+                  <h3 class="dish__title">Tiramisu</h3>
+                  <p class="dish__sidedish">À la noisette</p>
+                </div>
+                <div class="dish__info">
+                  <span class="dish__price">23€</span>
+                </div>
+              </div>
+              <div class="dish__confirm"></div>
+            </li>
           </ul>
         </div>
 
-        <button class="carte__ button button">Commander</button>
+        <button class="carte__button button">Commander</button>
       </section>
     </main>
 
@@ -138,5 +220,5 @@
         </ul>
       </div>
     </footer>
-</body>
+  </body>
 </html>

@@ -77,6 +77,70 @@ body {
   background-image: url("../../assets/logo/heart-solid-full.svg");
 }
 
+.dish {
+  display: flex;
+  background-color: #FFFFFF;
+  border-radius: 15px;
+  width: 100%;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+.dish .dish__content {
+  display: flex;
+  justify-content: space-between;
+  padding: 13.5px 15px;
+  width: 100%;
+  min-width: 0;
+}
+.dish .dish__content:hover + .dish__confirm, .dish .dish__content:focus + .dish__confirm {
+  width: 59px;
+}
+.dish .dish__content .dish__text {
+  overflow: hidden;
+}
+.dish .dish__content .dish__title {
+  font-size: 1.125rem;
+  font-weight: 500;
+  margin-bottom: 5px;
+}
+.dish .dish__content .dish__sidedish {
+  font-size: 15px;
+  font-weight: 300;
+}
+.dish .dish__content .dish__title,
+.dish .dish__content .dish__sidedish {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.dish .dish__content .dish__info {
+  display: flex;
+  flex-shrink: 0;
+}
+.dish .dish__content .dish__info .dish__price {
+  font-size: 15px;
+  font-weight: 700;
+  background-color: #FFFFFF;
+  align-self: flex-end;
+  padding-left: 10px;
+}
+.dish .dish__confirm {
+  background-image: url("../assets/logo/circle-check-solid-full.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #99E2D0;
+  width: 59px;
+  height: 72px;
+  border-radius: 0 15px 15px 0;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+  display: flex;
+  width: 0;
+  transition-property: width;
+  transition-duration: 0.5s;
+  transition-behavior: ease;
+}
+
 .tutorial__badge {
   display: flex;
   align-items: center;
@@ -402,4 +466,11 @@ footer .footer__item:nth-child(4) {
   height: 2px;
   background-color: #99E2D0;
   margin-top: 8px;
+}
+.carte .carte__button {
+  padding: 16px 48px;
+  width: -moz-fit-content;
+  width: fit-content;
+  border: none;
+  align-self: center;
 }/*# sourceMappingURL=main.css.map */

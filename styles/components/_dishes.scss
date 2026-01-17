@@ -6,6 +6,7 @@
   border-radius: 15px;
   width: 100%;
   box-shadow: variables.$shadow-dish;
+  overflow: hidden;
 
   .dish__content {
     display: flex;

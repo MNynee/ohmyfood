@@ -76,6 +76,9 @@
   @media (min-width: 1440px) {
     padding: 50px 180px;
   }
+  @media (min-width: 1900px) {
+    padding: 50px 450px;
+  }
 }
 
 // Restaurants
@@ -108,5 +111,8 @@
 
   @media (min-width: 1440px) {
     padding: 30px 180px;
+  }
+  @media (min-width: 1900px) {
+    padding: 50px 450px;
   }
 }

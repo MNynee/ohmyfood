@@ -364,6 +364,11 @@ footer .footer__item:nth-child(4) {
     padding: 50px 180px;
   }
 }
+@media (min-width: 1900px) {
+  .tutorial {
+    padding: 50px 450px;
+  }
+}
 
 .restaurants {
   display: flex;
@@ -394,6 +399,11 @@ footer .footer__item:nth-child(4) {
 @media (min-width: 1440px) {
   .restaurants {
     padding: 30px 180px;
+  }
+}
+@media (min-width: 1900px) {
+  .restaurants {
+    padding: 50px 450px;
   }
 }
 

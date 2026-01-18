@@ -64,10 +64,10 @@
     width: 59px;
     height: 72px;
     border-radius: 0 15px 15px 0;
+    display: flex;
     justify-content: center;
     align-items: center;
     flex-shrink: 0;
-    display: flex;
     width: 0;
     transition-property: width;
     transition-duration: .5s;

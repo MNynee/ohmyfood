@@ -132,10 +132,10 @@ body {
   width: 59px;
   height: 72px;
   border-radius: 0 15px 15px 0;
+  display: flex;
   justify-content: center;
   align-items: center;
   flex-shrink: 0;
-  display: flex;
   width: 0;
   transition-property: width;
   transition-duration: 0.5s;
@@ -423,13 +423,13 @@ footer .footer__item:nth-child(4) {
 .carte {
   display: flex;
   flex-direction: column;
-  background-color: #F6F6F6;
   gap: 40px;
+  background-color: #F6F6F6;
   margin-top: -56px;
   padding: 32px 13px 40px 13px;
   border-radius: 25px 25px 0 0;
-  z-index: 2;
   position: relative;
+  z-index: 2;
 }
 @media (min-width: 768px) {
   .carte {
@@ -508,8 +508,6 @@ footer .footer__item:nth-child(4) {
 }
 .carte .carte__button {
   padding: 16px 48px;
-  width: -moz-fit-content;
-  width: fit-content;
   border: none;
   align-self: center;
 }/*# sourceMappingURL=main.css.map */

@@ -1,3 +1,5 @@
+// Background colors
+
 $bg-main: #F6F6F6;
 $bg-secondary: #FFFFFF;
 $bg-location: #EAEAEA;
@@ -10,13 +12,19 @@ $hover-dishes: #99E2D0;
 $bg-button: linear-gradient(#E370DA, #9356DC);
 $bg-liked-button: linear-gradient(#9356DC, #FF79DA);
 
+// Text colors
+
 $text-color-main: #000000;
 $text-color-secondary: #353535;
 $text-color-button: #FFFFFF;
 $text-color-title: #101010;
 
+// Fonts
+
 $font-title: 'Shrikhand', serif;
 $font-text: 'Roboto', sans-serif;
+
+// Shadows
 
 $shadow-header: 0 2px 4px rgba(0, 0, 0, 0.25);
 $shadow-location: 0 4px 4px rgba(0, 0, 0, 0.25);

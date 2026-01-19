@@ -145,7 +145,7 @@ a {
   width: 0;
   transition-property: width;
   transition-duration: 0.5s;
-  transition-behavior: ease;
+  transition-timing-function: ease;
 }
 
 .tutorial__badge {

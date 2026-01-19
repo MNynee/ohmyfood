@@ -71,6 +71,6 @@
     width: 0;
     transition-property: width;
     transition-duration: .5s;
-    transition-behavior: ease;
+    transition-timing-function: ease;
   }
 }

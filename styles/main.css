@@ -9,6 +9,11 @@ body {
   background-color: #FFFFFF;
 }
 
+a {
+  text-decoration: none;
+  color: #353535;
+}
+
 .button {
   border-radius: 25px;
   background: linear-gradient(#E370DA, #9356DC);

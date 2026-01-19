@@ -10,3 +10,8 @@ body {
   font-family: variables.$font-text;
   background-color: variables.$bg-secondary;
 }
+
+a {
+  text-decoration: none;
+  color: variables.$text-color-secondary;
+}

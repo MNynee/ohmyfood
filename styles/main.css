@@ -517,6 +517,19 @@ footer .footer__item:nth-child(4) {
   flex-direction: column;
   gap: 12px;
 }
+.carte .carte__options {
+  opacity: 0;
+  animation: fadeIn 1s ease forwards;
+}
+.carte .carte__options:nth-child(2) {
+  animation-delay: 1s;
+}
+.carte .carte__options:nth-child(3) {
+  animation-delay: 2s;
+}
+.carte .carte__options:nth-child(4) {
+  animation-delay: 3s;
+}
 .carte .carte__list {
   list-style-type: none;
 }
@@ -553,5 +566,14 @@ footer .footer__item:nth-child(4) {
   to {
     opacity: 0;
     z-index: -100;
+  }
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
   }
 }/*# sourceMappingURL=main.css.map */

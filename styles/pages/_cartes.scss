@@ -70,12 +70,21 @@
       display: block;
       width: 32px;
       height: 32px;
-      background-image: url("../../assets/logo/heart-regular-full.svg");
-      transition: background-image 0.2s ease;
+      font-size: 2em;
+      background: #7d7d7d;
+      background-clip: text;
+      color: transparent;
+
+      i {
+        align-self: center;
+        justify-self: center;
+        width: 32px;
+        height: 32px;
+      }
     }
 
     .favorite__button:checked + label > .carte__favorite {
-      background-image: url("../../assets/logo/heart-solid-full.svg");
+      animation: likeColor 0.3s linear forwards;
     }
   }
 

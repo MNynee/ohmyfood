@@ -55,3 +55,18 @@
         opacity: 1;
     }
 }
+
+// Like button animation
+
+@keyframes likeColor {
+    0% {
+        background: #7d7d7d;
+        background-clip: text;
+        color: transparent;
+    }
+    100% {
+        background: variables.$bg-liked-button;
+        background-clip: text;
+        color: transparent;
+    }
+}

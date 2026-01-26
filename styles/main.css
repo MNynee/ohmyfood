@@ -379,6 +379,43 @@ footer .footer__item:nth-child(4) {
     gap: 30px;
   }
 }
+.tutorial .tutorial__steps .tutorial__badge {
+  display: flex;
+  justify-content: flex-start;
+  gap: 24px;
+  padding: 0 35px;
+}
+.tutorial .tutorial__steps .tutorial__badge .badge__icon-1,
+.tutorial .tutorial__steps .tutorial__badge .badge__icon-2,
+.tutorial .tutorial__steps .tutorial__badge .badge__icon-3 {
+  width: 20px;
+  height: 20px;
+}
+.tutorial .tutorial__steps .tutorial__badge .badge__icon-1 {
+  background-image: url("../../assets/logo/mobile-screen-button-solid-full.svg");
+}
+.tutorial .tutorial__steps .tutorial__badge .badge__icon-2 {
+  background-image: url("../../assets/logo/list-solid-full.svg");
+}
+.tutorial .tutorial__steps .tutorial__badge .badge__icon-3 {
+  background-image: url("../../assets/logo/store-solid-full.svg");
+}
+.tutorial .tutorial__steps .tutorial__badge:hover .badge__icon-1,
+.tutorial .tutorial__steps .tutorial__badge:hover .badge__icon-2,
+.tutorial .tutorial__steps .tutorial__badge:hover .badge__icon-3, .tutorial .tutorial__steps .tutorial__badge:focus .badge__icon-1,
+.tutorial .tutorial__steps .tutorial__badge:focus .badge__icon-2,
+.tutorial .tutorial__steps .tutorial__badge:focus .badge__icon-3 {
+  transition: background-image 0.3s ease;
+}
+.tutorial .tutorial__steps .tutorial__badge:hover .badge__icon-1, .tutorial .tutorial__steps .tutorial__badge:focus .badge__icon-1 {
+  background-image: url("../../assets/logo/mobile-screen-button-solid-full-purple.svg");
+}
+.tutorial .tutorial__steps .tutorial__badge:hover .badge__icon-2, .tutorial .tutorial__steps .tutorial__badge:focus .badge__icon-2 {
+  background-image: url("../../assets/logo/list-solid-full-purple.svg");
+}
+.tutorial .tutorial__steps .tutorial__badge:hover .badge__icon-3, .tutorial .tutorial__steps .tutorial__badge:focus .badge__icon-3 {
+  background-image: url("../../assets/logo/store-solid-full-purple.svg");
+}
 @media (min-width: 389px) {
   .tutorial {
     padding: 48px 20px;

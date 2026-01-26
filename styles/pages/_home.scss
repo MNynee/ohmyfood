@@ -63,6 +63,53 @@
     @media (min-width: 1024px) {
       gap: 30px;
     }
+
+    .tutorial__badge {
+      display: flex;
+      justify-content: flex-start;
+      gap: 24px;
+      padding: 0 35px;
+
+      .badge__icon-1,
+      .badge__icon-2,
+      .badge__icon-3 {
+        width: 20px;
+        height: 20px;
+      }
+
+      .badge__icon-1 {
+        background-image: url("../../assets/logo/mobile-screen-button-solid-full.svg");
+      }
+
+      .badge__icon-2 {
+        background-image: url("../../assets/logo/list-solid-full.svg");
+      }
+
+      .badge__icon-3 {
+        background-image: url("../../assets/logo/store-solid-full.svg");
+      }
+
+      &:hover,
+      &:focus {
+        .badge__icon-1,
+        .badge__icon-2,
+        .badge__icon-3 {
+          transition: background-image 0.3s ease;
+        }
+
+        .badge__icon-1 {
+          background-image: url("../../assets/logo/mobile-screen-button-solid-full-purple.svg");
+        }
+
+        .badge__icon-2 {
+          background-image: url("../../assets/logo/list-solid-full-purple.svg");
+        }
+
+        .badge__icon-3 {
+          background-image: url("../../assets/logo/store-solid-full-purple.svg");
+        }
+      }
+    }
   }
 
   @media (min-width: 389px) {
